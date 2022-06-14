@@ -1,6 +1,5 @@
 //MayanWolfe VOD at 3:00 pm on 6/12/2022: Let's Make Changes to MongoDB Using the DOM! #100Devs
 
-const { response } = require('express')
 const express = require('express')
 const app = express()
 const MongoClient = require('mongodb').MongoClient
@@ -8,7 +7,7 @@ const PORT = 8000
 require('dotenv').config()
 
 
-//DECLARED DB VARIABLES
+//DECLARED DB VARIABLES(Hide credentials)
 let db,
     dbConnectionStr = process.env.DB_STRING
     dbName = "startrekapii"
