@@ -1,5 +1,6 @@
 //MayanWolfe VOD at 3:00 pm on 6/12/2022: Let's Make Changes to MongoDB Using the DOM! #100Devs
 
+//REQUIRED DEPENDENCIES - 1:15:00
 const express = require('express')
 const app = express()
 const MongoClient = require('mongodb').MongoClient
@@ -27,9 +28,9 @@ app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 
 
-//CRUD  METHODS
+//CRUD  METHODS - 1:21:00
 app.get('/', (request, response) => {
-    db.collection('alien-info').find().toArray() // 1:45:00
+    db.collection('alien-info').find().toArray() // 1:25:00 , 1:45:00
     .then(data => {
         let nameList = data.map(item => item.speciesName)
         console.log(nameList)
