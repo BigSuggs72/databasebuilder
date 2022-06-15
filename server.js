@@ -51,7 +51,7 @@ app.post('/api', (request, response) => {  // 2:00:00
     })
 })
 
-app.put('/updateEntry', (request, response) => { //2:45:00
+app.put('/updateEntry', (request, response) => { //2:47:00
     console.log(request.body)
     Object.keys(request.body).forEach(key => {
         if ( request.body[key] === null || request.body[key] === undefined || request.body[key] === "") {
@@ -86,5 +86,5 @@ app.delete('/deleteEntry', (request, response) => { //3:44:00
 
 //SET UP LOCALHOST ON PORT
 app.listen(process.env.port || PORT, () => {
-      console.log(`The server is active on port ${PORT}!!!`)
+      console.log(`The server is active on port ${PORT} right now!!!`)
 })
