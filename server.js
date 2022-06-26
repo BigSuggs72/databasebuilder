@@ -1,10 +1,9 @@
-//MayanWolfe VOD at 3:00 pm on 6/12/2022: Let's Make Changes to MongoDB Using the DOM! #100Devs
+//MayanWolfe VOD at 3:00 pm on 6/12/2022: Let's Make Changes to MongoDB Using the DOM! #100Devs (after Class 41 on 6/9/22)
 
 //REQUIRED DEPENDENCIES - 1:15:00
 const express = require('express')
 const app = express()
 const MongoClient = require('mongodb').MongoClient
-const PORT = 8000
 require('dotenv').config()
 
 
@@ -85,6 +84,6 @@ app.delete('/deleteEntry', (request, response) => { //3:44:00
 })
 
 //SET UP LOCALHOST ON PORT
-app.listen(process.env.port || PORT, () => {
-      console.log(`The server is active on port ${PORT} right now!!!`)
+app.listen(process.env.PORT || PORT, () => {
+      console.log(`The server is active!!!`)
 })
