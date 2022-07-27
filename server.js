@@ -20,6 +20,7 @@ MongoClient.connect(dbConnectionStr)
         db = client.db(dbName)
     })
 
+    
 //SET MIDDLEWARE
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
